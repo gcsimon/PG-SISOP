@@ -5,8 +5,7 @@ import javax.websocket.OnMessage;
 import javax.websocket.OnOpen;               
 
 import java.util.logging.Logger;              
-import java.util.*;                           
-import java.io.IOException;  
+import java.util.*;
 
 @ServerEndpoint("/chat")
 public class ChatServer{
@@ -28,7 +27,7 @@ public class ChatServer{
 
     @OnMessage
     public void onMessage(String message, Session session) {
-        logger.info("sessao " + session.getId() + "mandou essa msg: `" + message);
+        logger.info("sessao " + session.getId() + " mandou essa msg: `" + message);
         for (Session sess : sessions) {
                 try {
                     if (sess != session)
