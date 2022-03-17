@@ -1,3 +1,4 @@
 # PG-SISOP
 
-mvn jetty:run to build and execute
+to build and execute:
+mvn jetty:run 
